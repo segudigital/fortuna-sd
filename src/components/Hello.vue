@@ -8,13 +8,12 @@
           <b-col lg="7" class="text-left">
       
             <!-- <h1>{{ $t('welcomeMsg') }}</h1> -->
-            <h1>{{ $t('message') }}</h1>
-            <p>Contesta este test y descubre cuidados que puedes incorporar en las acciones de comunicación en línea de tu organización, medio o 	colectivx.</p>
-            <p>Responde el test sobre uso de la tecnología para la comunicación de tu causa, movimiento o labor periodística. Este test contiene preguntas sobre tus dispositivos, sobre cómo manejas tus cuentas, apps y plataformas en internet, así como tu información y la de tu comunidad. Al finalizar, te invitamos a suscribirte al reto semanal y recibir en tu correo acciones breves para seguir explorando juntxs.</p>
-            <b-button block variant="primary" size="lg">Ir al test</b-button>
+            <h1>{{ $t('hello.title') }}</h1>
+            <div v-html="$t('hello.text')" />
+            <b-button block variant="primary" size="lg">{{$t('hello.acction_button')}}</b-button>
           </b-col>
           <b-col>
-            <b-img src="/adivina_sin_fondo.svg" fluid alt="Imagen de app"></b-img>
+            <b-img src="/adivina_sin_fondo.svg" fluid :alt="$t('hello.alt_imagen')"></b-img>
           </b-col>
         </b-row>
       </b-container>

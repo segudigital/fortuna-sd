@@ -1,11 +1,18 @@
 {
-    "message": "hola mundo",
-    "nav": {
-        "about": "About us",
-        "language": "Language",
-        "help_translate": "Help translate"
+  "message": "Seguridad digital para la comunicación de nuestras luchas, movimientos, labor periodística",
+  "nav": {
+      "_comment": "Menu principal",
+      "about": "About us",
+      "language": "Language",
+      "help_translate": "Help translate"
+  },
+  "hello": {
+      "_comment": "¡Que Mercurio retrógrado no afecte tus comunicaciones digitales!",
+      "title": "",
+      "text": ""
     },
     "about": {
+      "_comment": "Creditos y esas cosas",
       "title": "About us",
       "text": "About this proyect bla bla bla.",
       "credits": {

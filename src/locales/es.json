@@ -1,11 +1,20 @@
 {
-    "message": "hola mundo",
+    "message": "Seguridad digital para la comunicación de nuestras luchas, movimientos, labor periodística",
     "nav": {
+        "_comment": "Menu principal",
         "about": "Sobre este proyecto",
         "language": "Idioma",
         "help_translate": "Ayudanos a traducir"
     },
-    "about": {
+    "hello": {
+        "_comment": "Modulo de inicio (Hello.vue)",
+        "title": "¡Que Mercurio retrógrado no afecte tus comunicaciones digitales!",
+        "text": "<p>Contesta este test y descubre cuidados que puedes incorporar en las acciones de comunicación en línea de tu organización, medio o colectivx.</p> <p>Responde el test sobre uso de la tecnología para la comunicación de tu causa, movimiento o labor periodística. Este test contiene preguntas sobre tus dispositivos, sobre cómo manejas tus cuentas, apps y plataformas en internet, así como tu información y la de tu comunidad. Al finalizar, te invitamos a suscribirte al reto semanal y recibir en tu correo acciones breves para seguir explorando juntxs.</p>",
+        "acction_button": "Ir al test",
+        "alt_imagen": "Adivina Seguridad Digital"
+      },
+      "about": {
+        "_comment": "Creditos y esas cosas",
         "title": "Sobre este proyecto",
         "text": "Este es proyecto bla bla bla.",
         "credits": {
