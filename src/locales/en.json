@@ -1,0 +1,16 @@
+{
+    "message": "hola mundo",
+    "nav": {
+        "about": "About us",
+        "language": "Language",
+        "help_translate": "Help translate"
+    },
+    "about": {
+      "title": "About us",
+      "text": "About this proyect bla bla bla.",
+      "credits": {
+          "nombre": "SeguDigital",
+          "url": "https://twitter.com/segudigital"
+      }
+  }
+}
