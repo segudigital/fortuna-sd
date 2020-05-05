@@ -1,9 +1,20 @@
 <template>
     <b-container class="d-flex align-items-center justify-content-center">
     <div class="quiz"></div>
-      <h1>quiz page</h1>
+      <QuizLoader />
     </b-container>
 </template>
+
+<script>
+import QuizLoader from "@/components/QuizLoader.vue"
+
+export default {
+  name: 'Quiz',
+  components: {
+        QuizLoader
+    } 
+}
+</script>
 
 <style >
 .bg {
@@ -19,6 +30,7 @@
   position: fixed;
   right: -35%;
   bottom: -25%;
+  opacity: .20;
 }
 @keyframes spin{
 	from{transform:rotate(360deg)}

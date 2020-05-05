@@ -24,8 +24,14 @@ const routes = [
       {
         path: 'quiz',
         name: 'Quiz',
-        component: () => import(/* webpackChunkName: "about" */ '../views/Quiz.vue')
-      }
+        component: () => import(/* webpackChunkName: "quiz" */ '../views/Quiz.vue')
+      },
+      // Aun no decido si deberia tener una ruta para cada pregunta [[issue]]
+      // {
+      //   path: '/pregunta/:id',
+      //   name: 'pregunta',
+      //   component: () => import(/* webpackChunkName: "foto" */ './views/Prgunta.vue')
+      // }
     ]
   }
 ]

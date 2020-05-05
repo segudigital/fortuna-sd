@@ -1,17 +1,17 @@
 {
-    "message": "Seguridad digital para la comunicación de nuestras luchas, movimientos, labor periodística",
+    "message": "Digital security for the communication of our struggles, movements, journalistic work",
     "nav": {
-        "_comment": "Menu principal",
-        "about": "Sobre este proyecto",
-        "language": "Lengua",
-        "help_translate": "Ayudanos a traducir"
+        "_comment": "Main menu",
+        "about": "About this project",
+        "language": "Language",
+        "help_translate": "Help us translate"
     },
     "hello": {
-        "_comment": "Modulo de inicio (Hello.vue)",
-        "title": "¡Que Mercurio retrógrado no afecte tus comunicaciones digitales!",
+        "_comment": "Start module (Hello.vue)",
+        "title": "Don't let Mercury retrograde affect your digital communications!",
         "text": "<p>Contesta este test y descubre cuidados que puedes incorporar en las acciones de comunicación en línea de tu organización, medio o colectivx.</p> <p>Responde el test sobre uso de la tecnología para la comunicación de tu causa, movimiento o labor periodística. Este test contiene preguntas sobre tus dispositivos, sobre cómo manejas tus cuentas, apps y plataformas en internet, así como tu información y la de tu comunidad. Al finalizar, te invitamos a suscribirte al reto semanal y recibir en tu correo acciones breves para seguir explorando juntxs.</p>",
         "acction_button": "Ir al test",
-        "alt_imagen": "Adivina Seguridad Digital"
+        "alt_imagen": "Divine Digital Security"
       },
       "about": {
         "_comment": "Creditos y esas cosas",
@@ -21,5 +21,30 @@
             "nombre": "SeguDigital",
             "url": "https://twitter.com/segudigital"
         }
+    },
+
+
+    "quiz": {
+        "_comment": "Preguntas del QuizLoader ingles",
+        "questions":[
+            {
+                "catego": "Privacidad ingles",
+                "text":"Question 1 ingles",
+                "responses":[
+                    {"text":"Wrong, too bad. ingles"},
+                    {"text":"Right! ingles","correct":true}
+                ]
+            },
+            {
+                "catego": "Privacidad ingles",
+                "text":"Question 2 ingles",
+                "responses":[
+                    {"text":"Right answer ingles","correct":true},
+                    {"text":"Wrong answer ingles"}
+                ]
+            }
+        ]
     }
+
+
 }

@@ -4,8 +4,6 @@
             <div id='stars'></div>
             <div id='stars2'></div>
             <div id='stars3'></div>
-
-
             <Menu />
             <AboutUs />
             <transition name="fade" mode="out-in">
@@ -60,7 +58,7 @@ html, body {
     pointer-events: none;
 }
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 5s;
+  transition: opacity .2s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;

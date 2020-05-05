@@ -19,7 +19,8 @@
 import LanguageSwitcher from "@/components/LanguageSwitcher.vue"
 
 export default {
-  components: {
+    name: "Menu",
+    components: {
         LanguageSwitcher
     } 
 }

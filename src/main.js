@@ -5,11 +5,15 @@ import store from './store'
 import i18n from './i18n'
 
 import BootstrapVue from 'bootstrap-vue'
-
 Vue.use(BootstrapVue)
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+// Activar esto solo para consumir json externo (API)
+// import axios from 'axios'
+// import VueAxios from 'vue-axios'
+// Vue.use(VueAxios, axios)
 
 Vue.config.productionTip = false
 

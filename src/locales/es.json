@@ -1,7 +1,7 @@
 {
     "message": "Seguridad digital para la comunicación de nuestras luchas, movimientos, labor periodística",
     "nav": {
-        "_comment": "Menu principal",
+        "_comment": "Menú principal",
         "about": "Sobre este proyecto",
         "language": "Idioma",
         "help_translate": "Ayudanos a traducir"
@@ -21,5 +21,31 @@
             "nombre": "SeguDigital",
             "url": "https://twitter.com/segudigital"
         }
+    },
+
+
+    "quiz": {
+        "_comment": "Preguntas del QuizLoader",
+        "questions":[
+            {
+                "catego": "Privacidad",
+                "text":"Question 1",
+                "responses":[
+                    {"text":"Wrong, too bad."},
+                    {"text":"Right!","correct":true}
+                ]
+            },
+            {
+                "catego": "Privacidad",
+                "text":"Question 2",
+                "responses":[
+                    {"text":"Right answer","correct":true},
+                    {"text":"Wrong answer"}
+                ]
+            }
+        ]
     }
+
+    
+
 }

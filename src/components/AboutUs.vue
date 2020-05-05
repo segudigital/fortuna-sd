@@ -14,6 +14,11 @@
 
 <script>
 export default {
-
+  name: 'AboutUs'
 }
 </script>
+<style scoped>
+.sidebar-right {
+  background-color: #3096ffe3 !important;
+}
+</style>
