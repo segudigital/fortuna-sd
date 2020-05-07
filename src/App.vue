@@ -26,7 +26,7 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&display=swap');
-/* @import url('../assets/Inconsolata-VariableFont_wdthwght.ttf'); */
+/* @import url('/Inconsolata-VariableFont_wdthwght.ttf'); */
 body {
     font-family: 'Inconsolata', monospace !important;
 }

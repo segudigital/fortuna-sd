@@ -19,10 +19,10 @@ export default {
 <style >
 .bg {
   /* background-color: rgb(2, 3, 39) !important; */
-  background-color: #7543ff !important;
+  background-color: #754dfb !important;
 }
 .quiz {
-  background:url('/circulo-horoscopo-blanco.svg') no-repeat 50% 50%;
+  background:url('~@/assets/circulo-horoscopo-blanco.svg') no-repeat 50% 50%;
   width: 100%; 
   height: 100%;
   background-size:contain;

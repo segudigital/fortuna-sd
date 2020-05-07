@@ -22,25 +22,40 @@
             "url": "https://twitter.com/segudigital"
         }
     },
+    
 
 
     "quiz": {
         "_comment": "Preguntas del QuizLoader",
+        "alt_imagen": "Cartas tarot",
         "questions":[
             {
-                "catego": "Privacidad",
-                "text":"Question 1",
+                "text":"¿Tienes activada la contraseña de acceso en los dispositivos que usas para la comunicación?",
+                "description": "",
+                "catego": "Dispositivos",
                 "responses":[
-                    {"text":"Wrong, too bad."},
-                    {"text":"Right!","correct":true}
+                    {"text":"No"},
+                    {"text":"Si","correct":true}
                 ]
             },
             {
-                "catego": "Privacidad",
-                "text":"Question 2",
+                "text":"¿Tienes antivirus en tus dispositivos? ",
+                "description": "",
+                "catego": "Dispositivos",
                 "responses":[
-                    {"text":"Right answer","correct":true},
-                    {"text":"Wrong answer"}
+                    {"text":"Si","correct":true},
+                    {"text":"No"},
+                    {"text":"Sí, ¡tengo hasta dos! 🙈"}
+                ]
+            },
+            {
+                "text":"¿Tu teléfono y equipo de cómputo están cifrados?",
+                "description": "",
+                "catego": "Dispositivos",
+                "responses":[
+                    {"text":"Si","correct":true},
+                    {"text":"No"},
+                    {"text":"No sé 🤔"}
                 ]
             }
         ]

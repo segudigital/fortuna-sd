@@ -3,17 +3,16 @@
         <!-- Tomo las preguntas del archivo de idioma y genero un div para cada una -->
         <div v-for="(question, index) in $t('quiz.questions')" :key="question.index">
             <div v-show="index === questionIndex">
-                <h1>{{question.text}}</h1>
-                <ol>
+                <h3>{{question.text}}</h3>
                 <!-- Acá pinto las respuestas, sin limite pero por disenio mejor manter pocas -->
-                    <li v-for="response in question.responses" :key="response.index">
-                        <label>
+                    <b-row v-for="response in question.responses" :key="response.index">
+                        <label :class="'p-3'" class="col col-lg-6 mb-3">
                             <input type="radio" :name="index" :value="response.correct" v-model="userResponses[index]" @change="check">{{response.text}}
                         </label>
-                    </li>
-                </ol>
+                    </b-row>
             </div>
         </div>
+            <b-img :src="require('@/assets/tarjetas_tarot.svg')" fluid :alt="$t('quiz.alt_imagen')" class="col col-lg-2 col-5 col-md-3"></b-img>
 
         <!-- Pagina de resultados hay uqe hacer un modulo -->
         <div v-show="questionIndex === quiz.questions.length">
@@ -82,5 +81,28 @@ export default{
 <style scoped>
 section {
     z-index: 999 !important;
+    text-align: center;
+}
+section > div {
+    background: url('~@/assets/estrellitas.svg') no-repeat right top;
+    background-size: 2em;
+}
+h3 {
+    margin-bottom: 1.5em;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+label{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0.0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+    margin: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.514);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.514);
+    
+}
+input[type="radio"] {
+    display: none;
+    cursor: pointer;
+    font-weight: bold;
 }
 </style>
