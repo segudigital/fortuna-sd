@@ -1,23 +1,27 @@
 <template>
-    <section> <!-- div contenedor del template -->
-        <!-- Tomo las preguntas del archivo de idioma y genero un div para cada una -->
-        <div v-for="(question, index) in $t('quiz.questions')" :key="question.index">
-            <div v-show="index === questionIndex">
-                <h3>{{question.text}}</h3>
-                <!-- Acá pinto las respuestas, sin limite pero por disenio mejor manter pocas -->
-                    <b-row v-for="response in question.responses" :key="response.index">
-                        <label :class="'p-3'" class="col col-lg-6 mb-3">
-                            <input type="radio" :name="index" :value="response.correct" v-model="userResponses[index]" @change="check">{{response.text}}
-                        </label>
-                    </b-row>
+    <section>
+        <!-- Tomo las preguntas del archivo de idioma @/locales/\lng\.js y genero un div para cada una -->
+        <div v-for="(item, index) in jsonData" :key="item.index" id="question">
+            <!-- Pinto los bloques de categorias -->
+            <div v-show="index === itemIndex">
+                <small>{{item.category}} -- {{item.color}} -- {{itemIndex}}</small><hr/>
+                
+                <!-- Acá pinto las preguntas -->
+                <div v-for="(question, index) in item.questions" :key="question.index" >
+                    <div v-show="index === questionIndex">
+                        <h3>{{question.text}}</h3> Numero de preguntas en la seccion: {{item.questions.length}}
+                        <b-row v-for="response in question.responses" :key="response.index">
+                            <label :class="'p-3'" class="col col-lg-6 mb-3">
+                                <input type="radio" :name="index" :value="response.correct ? true : false" v-model="userResponse" @change="check(item.questions.length,itemIndex)">{{response.text}}
+                            </label>
+                        </b-row>
+                    </div>
+                </div>
             </div>
-        </div>
-            <b-img :src="require('@/assets/tarjetas_tarot.svg')" fluid :alt="$t('quiz.alt_imagen')" class="col col-lg-2 col-5 col-md-3"></b-img>
-
-        <!-- Pagina de resultados hay uqe hacer un modulo -->
-        <div v-show="questionIndex === quiz.questions.length">
-            <h2>Respuests y eso</h2>
-            <p>Total score: {{ score() }} / {{ quiz.questions.length }}</p>
+        </div>        
+        <!-- cargo modulo de los resultados -->
+        <div v-show="itemIndex === jsonData.length">
+            <QuizResults :userResponses="jsonData" />
         </div>
     </section>
 </template>
@@ -27,53 +31,34 @@
 // https://www.npmjs.com/package/vue-axios
 // // import axios from 'axios';
 
-// import { mapState, mapMutations } from 'vuex';
-
-var quiz = {
-        _comment: 'My quiz',
-        questions: [
-            {
-            text: "Question 1",
-            responses: [
-                {text: 'Wrong, too bad.'}, 
-                {text: 'Right!', correct: true}, 
-            ]
-            }, {
-            text: "Question 2",
-            responses: [
-                {text: 'Right answer', correct: true}, 
-                {text: 'Wrong answer'}, 
-            ]
-            } 
-        ]
-        };
+import QuizResults from "@/components/QuizResults.vue"
 
 export default{
     name: 'QuizLoader',
+    components: {
+        QuizResults
+    },
     data(){
         return{
-            quiz: quiz,
+            jsonData: this.$i18n.messages[this.$i18n.locale].quiz_items, // cargo datos de i18n
+            itemIndex: 0,
             questionIndex: 0,
-            // An array initialized with "false" values for each question
-            // It means: "did the user answered correctly to the question n?" "no".
-            // userResponses: Array(quiz.questions.length).fill(false)
-            userResponses: Array(quiz.questions.length).fill(false) 
-
+            userResponse: ''
         }
-    },
-    computed: {
-        // ...mapState([''])
     },
     methods:{
-        // ...mapMutations(['']),
-        check: function() {
+        check (length) {
+            // console.log(this.jsonData[this.itemIndex].questions[this.questionIndex]) 
+            this.jsonData[this.itemIndex].questions[this.questionIndex].responses = this.userResponse
+
             this.questionIndex++;
-        },
-        score: function() {
-            return this.userResponses.filter(function(val) { return val }).length;
+            // verifico que se recorran todas las preguntas por categoria
+            if (this.questionIndex === length) {
+                this.questionIndex = 0
+                this.itemIndex++
+                console.log('cambio de categoria')
+            }
         }
-    },
-    created(){
     }
 }
 </script>
@@ -83,7 +68,7 @@ section {
     z-index: 999 !important;
     text-align: center;
 }
-section > div {
+#question {
     background: url('~@/assets/estrellitas.svg') no-repeat right top;
     background-size: 2em;
 }

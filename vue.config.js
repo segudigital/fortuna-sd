@@ -6,6 +6,6 @@ module.exports = {
       localeDir: 'locales',
       enableInSFC: false
     }
-  },
-  publicPath: '/fortuna-sd/'
+  }
+  // publicPath: '/fortuna-sd/'
 }

@@ -1,7 +1,8 @@
 <template>
   <header id="nav">
       <b-navbar toggleable="lg" type="dark" variant="dark" fixed="top">
-          <b-navbar-brand :href="`/${$i18n.locale}/`">#SeguridadDigital</b-navbar-brand> 
+          <b-navbar-brand :to="`/${$i18n.locale}/`">#SeguridadDigital</b-navbar-brand> 
+          <!-- <b-navbar-brand :href="`/${$i18n.locale}/`">#SeguridadDigital</b-navbar-brand>  -->
           <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
           <b-collapse id="nav-collapse" is-nav>

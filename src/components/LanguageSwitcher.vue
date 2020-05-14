@@ -1,8 +1,10 @@
 <template>
   <div class="locale-changer">
     <b-nav-item-dropdown :text="$t('nav.language')" right>
-        <b-dropdown-item v-for="(lang, i) in $i18n.availableLocales"  :key="`Lang${i}`" :href="lang"
-        @click.prevent="setLocale(lang)" >{{ lang }}</b-dropdown-item>
+        <!-- <b-dropdown-item v-for="(lang, i) in $i18n.availableLocales"  :key="`Lang${i}`" :href="lang"
+        @click.prevent="setLocale(lang)" >{{ lang }}</b-dropdown-item> -->
+        <b-dropdown-item v-for="(lang, i) in $i18n.availableLocales"  :key="`Lang${i}`" :href="'/'.lang"
+        @click="setLocale(lang)" >{{ lang }}</b-dropdown-item>
         <b-dropdown-item href="#">{{$t('nav.help_translate')}}</b-dropdown-item>
     </b-nav-item-dropdown>
 

@@ -1,7 +1,7 @@
 {
     "message": "Seguridad digital para la comunicación de nuestras luchas, movimientos, labor periodística",
     "nav": {
-        "_comment": "Menú principal",
+        "_comment": "Menú principal (Menu.vue)",
         "about": "Sobre este proyecto",
         "language": "Idioma",
         "help_translate": "Ayudanos a traducir"
@@ -14,53 +14,136 @@
         "alt_imagen": "Adivina Seguridad Digital"
       },
       "about": {
-        "_comment": "Creditos y esas cosas",
+        "_comment": "Creditos y esas cosas (AboutUs.vue)",
         "title": "Sobre este proyecto",
         "text": "Este es proyecto bla bla bla.",
-        "credits": {
-            "nombre": "SeguDigital",
-            "url": "https://twitter.com/segudigital"
-        }
-    },
-    
-
-
-    "quiz": {
-        "_comment": "Preguntas del QuizLoader",
-        "alt_imagen": "Cartas tarot",
-        "questions":[
+        "credits": [
             {
-                "text":"¿Tienes activada la contraseña de acceso en los dispositivos que usas para la comunicación?",
-                "description": "",
-                "catego": "Dispositivos",
-                "responses":[
-                    {"text":"No"},
-                    {"text":"Si","correct":true}
-                ]
+                "name": "SeguDigital",
+                "url": "https://twitter.com/segudigital",
+                "img": "https://segudigital.org/media/segudigital-circulo.svg"
             },
             {
-                "text":"¿Tienes antivirus en tus dispositivos? ",
-                "description": "",
-                "catego": "Dispositivos",
-                "responses":[
-                    {"text":"Si","correct":true},
-                    {"text":"No"},
-                    {"text":"Sí, ¡tengo hasta dos! 🙈"}
-                ]
-            },
-            {
-                "text":"¿Tu teléfono y equipo de cómputo están cifrados?",
-                "description": "",
-                "catego": "Dispositivos",
-                "responses":[
-                    {"text":"Si","correct":true},
-                    {"text":"No"},
-                    {"text":"No sé 🤔"}
-                ]
+                "name": "Internews",
+                "url": "https://twitter.com/Internews",
+                "img": "https://internews.org/themes/incendio/logo.svg"
             }
         ]
-    }
+    },
+    "quiz": {
+        "_comment": "Seccion general del Quizz (Quiz.vue, QuizLoader.vue, QuizResults.vue)",
+        "alt_imagen": "Cartas tarot",
+        "title_results": "Las cartas dicen que tu fortuna en seguridad digital es:"
+    },
 
-    
 
+
+    "quiz_items":[
+        {
+            "category": "Dispositivos",
+            "texto_result": "veo en tu futuro algo mal con el manejo de tus dispositivos",
+            "color": "#ff0000",
+            "questions":[
+                {
+                    "text":"¿Tienes activada la contraseña de acceso en los dispositivos que usas para la comunicación?",
+                    "description": "",
+                    "error_text": "bla bla bla",
+                    "url_resource": "mi_iurl",
+                    "responses":[
+                        {"text":"No"},
+                        {"text":"Si","correct":true}
+                    ]
+                },
+                {
+                    "text":"¿Tienes antivirus en tus dispositivos? ",
+                    "description": "",
+                    "error_text": "bla bla bla",
+                    "url_resource": "mi_iurl",
+                    "responses":[
+                        {"text":"Si","correct":true},
+                        {"text":"No"},
+                        {"text":"Sí, ¡tengo hasta dos! 🙈"}
+                    ]
+                },
+                {
+                    "text":"¿Tu teléfono y equipo de cómputo están cifrados?",
+                    "description": "",
+                    "error_text": "bla bla bla",
+                    "url_resource": "mi_iurl",
+                    "responses":[
+                        {"text":"Si","correct":true},
+                        {"text":"No"},
+                        {"text":"No sé 🤔"}
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Privacidad",
+            "texto_result": "veo en tu futuro algo mal con el manejo de tu privacidad",
+            "color": "#00ff00",
+            "questions":[
+                {
+                    "text":"¿Tienes activada la contraseña de acceso en los dispositivos que usas para la comunicación?",
+                    "description": "",
+                    "error_text": "bla bla bla",
+                    "url_resource": "mi_iurl",
+                    "responses":[
+                        {"text":"No"},
+                        {"text":"Si","correct":true}
+                    ]
+                },
+                {
+                    "text":"¿Tienes antivirus en tus dispositivos? ",
+                    "description": "",
+                    "error_text": "bla bla bla",
+                    "url_resource": "mi_iurl",
+                    "responses":[
+                        {"text":"Si","correct":true},
+                        {"text":"No"},
+                        {"text":"Sí, ¡tengo hasta dos! 🙈"}
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Anonimato",
+            "texto_result": "veo en tu futuro algo mal con el manejo de tu privacidad",
+            "color": "#00ff00",
+            "questions":[
+                {
+                    "text":"¿Tienes activada la contraseña de acceso en los dispositivos que usas para la comunicación?",
+                    "description": "",
+                    "error_text": "bla bla bla",
+                    "url_resource": "mi_iurl",
+                    "responses":[
+                        {"text":"No"},
+                        {"text":"Si","correct":true}
+                    ]
+                },
+                {
+                    "text":"¿Tienes antivirus en tus dispositivos? ",
+                    "description": "",
+                    "error_text": "bla bla bla",
+                    "url_resource": "mi_iurl",
+                    "responses":[
+                        {"text":"Si","correct":true},
+                        {"text":"No"},
+                        {"text":"Sí, ¡tengo hasta dos! 🙈"}
+                    ]
+                },
+                {
+                    "text":"¿Tu teléfono y equipo de cómputo están cifrados?",
+                    "description": "",
+                    "error_text": "bla bla bla",
+                    "url_resource": "mi_iurl",
+                    "responses":[
+                        {"text":"Si","correct":true},
+                        {"text":"No"},
+                        {"text":"No sé 🤔"}
+                    ]
+                }
+            ]
+        }
+    ]
 }
