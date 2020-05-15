@@ -30,4 +30,7 @@ export default {
 .navbar {
     background-color: #00000082 !important;
 }
+.collapse.show{
+  background-color: rgba(0, 0, 0, 0.8);
+}
 </style>

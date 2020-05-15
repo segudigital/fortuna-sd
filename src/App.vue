@@ -35,6 +35,7 @@ html, body {
 }
 
 .bg{
+    padding-top: 65px; /* problema del navbar encimado en movile */
     position: relative;
     background-color: #5C6BC0;
     overflow: hidden;

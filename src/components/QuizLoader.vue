@@ -4,12 +4,13 @@
         <div v-for="(item, index) in jsonData" :key="item.index" id="question">
             <!-- Pinto los bloques de categorias -->
             <div v-show="index === itemIndex">
-                <small>{{item.category}} -- {{item.color}} -- {{itemIndex}}</small><hr/>
+                <!-- <small>{{item.category}} -- {{item.color}} -- {{itemIndex}}</small><hr/> -->
                 
                 <!-- Acá pinto las preguntas -->
                 <div v-for="(question, index) in item.questions" :key="question.index" >
                     <div v-show="index === questionIndex">
-                        <h3>{{question.text}}</h3> Numero de preguntas en la seccion: {{item.questions.length}}
+                        <h3>{{question.text}}</h3> 
+                        <!-- Numero de preguntas en la seccion: {{item.questions.length}} -->
                         <b-row v-for="response in question.responses" :key="response.index">
                             <label :class="'p-3'" class="col col-lg-6 mb-3">
                                 <input type="radio" :name="index" :value="response.correct ? true : false" v-model="userResponse" @change="check(item.questions.length,itemIndex)">{{response.text}}

@@ -26,7 +26,7 @@ export default {
   width: 100%; 
   height: 100%;
   background-size:contain;
-  animation:spin 120s linear infinite;
+  animation:spin 90s linear infinite;
   position: fixed;
   right: -35%;
   bottom: -25%;
