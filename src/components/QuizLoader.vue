@@ -9,11 +9,11 @@
                 <!-- Acá pinto las preguntas -->
                 <div v-for="(question, index) in item.questions" :key="question.index" >
                     <div v-show="index === questionIndex">
-                        <h3>{{question.text}}</h3> 
+                        <h3>{{ question.text }}</h3> 
                         <!-- Numero de preguntas en la seccion: {{item.questions.length}} -->
                         <b-row v-for="response in question.responses" :key="response.index">
                             <label :class="'p-3'" class="col col-lg-6 mb-3">
-                                <input type="radio" :name="index" :value="response.correct ? true : false" v-model="userResponse" @change="check(item.questions.length,itemIndex)">{{response.text}}
+                                <input type="radio" :name="index" :value="response.correct ? true : false" v-model="userResponse" @change="check(item.questions.length,itemIndex)">{{ response.text }}
                             </label>
                         </b-row>
                     </div>
@@ -57,7 +57,6 @@ export default{
             if (this.questionIndex === length) {
                 this.questionIndex = 0
                 this.itemIndex++
-                console.log('cambio de categoria')
             }
         }
     }

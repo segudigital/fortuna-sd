@@ -2,6 +2,8 @@
     <b-sidebar id="sidebar-right" title="" right shadow backdrop>
         <div class="px-3 py-2">
         <p>{{$t('about.text')}}</p>
+        
+        <h4>{{$t('about.title')}}</h4>
       <div v-for="credit in $t('about.credits')" :key="credit.index" id="credit-img">
         <b-link :href="credit.url" target="_blank"><b-img :src="credit.img" :alt="credit.name" fluid></b-img></b-link>
         <hr>

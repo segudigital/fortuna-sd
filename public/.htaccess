@@ -1,0 +1,11 @@
+# Necesario activar mod_rewrite para el correcto funcionamiento de vue-route en apache2.
+## Para otros servidores: https://router.vuejs.org/guide/essentials/history-mode.html#example-server-configurations
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>

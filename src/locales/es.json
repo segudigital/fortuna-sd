@@ -15,7 +15,7 @@
       },
       "about": {
         "_comment": "Creditos y esas cosas (AboutUs.vue)",
-        "title": "Sobre este proyecto",
+        "title": "Hecho con ❤ por",
         "text": "Este es proyecto bla bla bla.",
         "credits": [
             {
@@ -41,7 +41,10 @@
     "quiz_items":[
         {
             "category": "Dispositivos",
-            "texto_result": "veo en tu futuro algo mal con el manejo de tus dispositivos",
+            "text_result_good": "Buen presagio en tu futuro con el manejo de tus dispositivos. (BUENO)",
+            "text_result_medium": "No tan buen presagio en tu futuro con el manejo de tus dispositivos. (MEDIO)",
+            "text_result_bad": "Mal presagio en tu futuro con el manejo de tus dispositivos. (MALO)",
+            "text_result_default": "**Este texto siempre se muestra",
             "color": "#ff0000",
             "questions":[
                 {
@@ -80,7 +83,10 @@
         },
         {
             "category": "Privacidad",
-            "texto_result": "veo en tu futuro algo mal con el manejo de tu privacidad",
+            "text_result_good": "Buen presagio en el futuro de tu privacidad (BUENO)",
+            "text_result_medium": "No tan buen presagio en el futuro de tu privacidad. (MEDIO)",
+            "text_result_bad": "Mal presagio en el futuro de tu privacidad. (MALO)",
+            "text_result_default": "**Este texto siempre se muestra",
             "color": "#00ff00",
             "questions":[
                 {
@@ -108,7 +114,10 @@
         },
         {
             "category": "Anonimato",
-            "texto_result": "veo en tu futuro algo mal con el manejo de tu privacidad",
+            "text_result_good": "Buen presagio en el futuro de tu anonimato (BUENO)",
+            "text_result_medium": "No tan buen presagio en el futuro de tu anonimato. (MEDIO)",
+            "text_result_bad": "Mal presagio en el futuro de tu anonimato. (MALO)",
+            "text_result_default": "**Este texto siempre se muestra",
             "color": "#00ff00",
             "questions":[
                 {
