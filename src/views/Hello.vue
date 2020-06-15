@@ -3,7 +3,7 @@
     <b-row class="row">
       <b-col md="7" class="text-left">
         <h1>{{ $t('hello.title') }}</h1>
-        <div v-html="$t('hello.text')" /> <!-- esto hay que arreglarlo (v-html), mostrar etiquetas html desde el json, vue dice que hacerlo asi podria ocacionar vulnerabilidades-->
+        <div class="mt-4" v-html="$t('hello.text')" /> <!-- esto hay que arreglarlo (v-html), mostrar etiquetas html desde el json, vue dice que hacerlo asi podria ocacionar vulnerabilidades-->
         <b-button block variant="primary" size="lg" :to="`/${$i18n.locale}/quiz`">{{$t('hello.acction_button')}}</b-button>
         <!-- <router-link to="quiz" block variant="primary">{{$t('hello.acction_button')}}</router-link> -->
       </b-col>
@@ -24,13 +24,15 @@ export default {
 </script>
 
 <style scoped>
-
 /* html {
   height: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow: hidden;
 } */
 .bg {
-  background-color: #5C6BC0;
+  background-color: #5C6BC0 !important;
+}
+h1 {
+  font-size: 2em;
 }
 </style>

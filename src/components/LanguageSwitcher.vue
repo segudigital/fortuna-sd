@@ -5,7 +5,7 @@
         @click.prevent="setLocale(lang)" >{{ lang }}</b-dropdown-item> -->
         <b-dropdown-item v-for="(lang, i) in $i18n.availableLocales"  :key="`Lang${i}`" :href="'/'.lang"
         @click="setLocale(lang)" >{{ lang }}</b-dropdown-item>
-        <b-dropdown-item href="#">{{$t('nav.help_translate')}}</b-dropdown-item>
+        <b-dropdown-item href="https://crwd.in/fortuna-en-seguridad-digital" target="_blank">{{$t('nav.help_translate')}}</b-dropdown-item>
     </b-nav-item-dropdown>
 
     <!-- <select v-model="$i18n.locale">
