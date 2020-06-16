@@ -14,7 +14,8 @@
                         <!-- Numero de preguntas en la seccion: {{item.questions.length}} -->
                         <b-row v-for="response in question.responses" :key="response.index" class="justify-content-md-center">
                             <b-col class="col-lg-6 mb-3">
-                                <b-button variant="link" size="lg" block squared class="response" @click="check(item.questions.length, response.correct ? true : false)"><span>{{ response.text }} - (val: {{response.correct ? true : false}})</span></b-button>
+                                <b-button variant="link" size="lg" block squared class="response" @click="check(item.questions.length, response.correct ? true : false)"><span>{{ response.text }}</span></b-button>
+                                <!-- <b-button variant="link" size="lg" block squared class="response" @click="check(item.questions.length, response.correct ? true : false)"><span>{{ response.text }} - (val: {{response.correct ? true : false}})</span></b-button> -->
                             </b-col>
                         </b-row>
                         <b-row class="justify-content-md-center">
