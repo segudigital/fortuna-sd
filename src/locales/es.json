@@ -15,8 +15,8 @@
       },
       "about": {
         "_comment": "Creditos y esas cosas (AboutUs.vue)",
-        "title": "Hecho con ❤ por",
-        "text": "Este es proyecto bla blaww bla.",
+        "title": "Hecho con ❤",
+        "text": "Un proyecto de @SeguDigital elaborado con el apoyo de Internews.",
         "credits": [
             {
                 "name": "SeguDigital",
@@ -28,7 +28,8 @@
                 "url": "https://twitter.com/Internews",
                 "img": "https://internews.org/themes/incendio/logo.svg"
             }
-        ]
+        ],
+        "sub_text": ""
     },
     "quiz": {
         "_comment": "Seccion general del Quizz (Quiz.vue, QuizLoader.vue, QuizResults.vue)",
@@ -37,9 +38,11 @@
         "text_results": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laboriosam possimus, quaerat voluptate sint doloremque eos facere veniam, quis illo expedita velit commodi ut temporibus beatae quibusdam molestias? Illum, quasi!",
         "button_recomendations": "Ver recomendaciones"
     },
-    "weekly_challenge": {
-        "_comment": "Estos textos es para el boletin del resto semanal",
-        "text_Challenge": "Si queieres mejorar tu fortuna en seguridad digital te recomendamos unirte al resto semanal, Aqui recibiras una nueva tarea cada lunez para mejorar la seguridad en tus cuentas y redes."
+    "reto_form": {
+        "_comment": "Cuadro de registro en el boletin del Reto de Segurida digital (RetoForm.vue)",
+        "title_challenge": "Te recomendamos unirte al reto semanal de seguridad digital",
+        "text_challenge": "Si queieres mejorar tu fortuna en seguridad digital te recomendamos unirte al resto semanal, Aqui recibiras una nueva tarea cada lunez para mejorar la seguridad en tus cuentas y redes. At quod qui ut voluptatem necessitatibus est itaque, eos odio, officia eveniet incidunt iste omnis vitae animi quibusdam ipsam provident molestiae iure?",
+        "button_challenge": "Unirme al reto"
     },
 
 
@@ -65,7 +68,7 @@
                 {
                     "text":"¿Tienes antivirus en tus dispositivos? ",
                     "description": "",
-                    "error_text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum a aliquam, nobis quisquam quas inventore. Voluptatibus veniam iusto officia consequuntur, sunt optio quas porro dolorum delectus hic numquam similique ab!Officiis sapiente neque, reiciendis molestias consequatur quidem illo aliquid nulla iure nam! Dignissimos, accusantium animi! Accusamus quisquam molestiae commodi aspernatur totam non, aperiam harum voluptatum eius esse enim voluptatibus quas.",
+                    "error_text": "Te recomendamos descargar en tu equipo de cómputo y teléfono uno de estos antivirus gratuitos https://www.avg.com, https://www.avira.com/es ¡Ojo! No es recomendable tener más de un antivirus en tus dispositivos ya que podrían entorpecer sus labores.",
                     "url_resource": "https://segudigital.org",
                     "responses":[
                         {"text":"Si","correct":true},
@@ -76,8 +79,8 @@
                 {
                     "text":"¿Tu teléfono y equipo de cómputo están cifrados?",
                     "description": "",
-                    "error_text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum a aliquam, nobis quisquam quas inventore. Voluptatibus veniam iusto officia consequuntur, sunt optio quas porro dolorum delectus hic numquam similique ab!Officiis sapiente neque, reiciendis molestias consequatur quidem illo aliquid nulla iure nam! Dignissimos, accusantium animi! Accusamus quisquam molestiae commodi aspernatur totam non, aperiam harum voluptatum eius esse enim voluptatibus quas.",
-                    "url_resource": "https://segudigital.org",
+                    "error_text": "Considera cifrar tus dispositivos y equipo de cómputo para proteger tu información de intrusos. ¡Hey! Será mucho más fácil de lo que piensas ;) Aquí https://segudigital.org/que-hago-para-cifrar-mis-dispositivos/ te explicamos cómo hacerlo.",
+                    "url_resource": "https://segudigital.org/que-hago-para-cifrar-mis-dispositivos/ ",
                     "responses":[
                         {"text":"Si","correct":true},
                         {"text":"No"},

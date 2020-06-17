@@ -39,6 +39,7 @@
                         <div class="text-right"><b-link :href="responses.url_resource " class="card-link" target="_blank">Más info >></b-link></div>
                       </b-card>
                     </div>
+                    <RetoForm />
                   </div>
                 </b-modal>
               </div>
@@ -49,14 +50,20 @@
           </div>
         </div>
 
+        <RetoForm />
+
 <!-- {{userResponses}} -->
         
     </div>
 </template>
 
 <script>
+import RetoForm from '@/components/RetoForm'
 export default {
     name: "QuizResults",
+    components: {
+      RetoForm
+    },
     props:
         ['userResponses']
     ,
@@ -112,14 +119,14 @@ export default {
   
 }
 .tarot-card .card-header {
-  color: #707053;
-  font-weight: bolder;
+  font-weight: 800 !important;
+  font-size: 1.2em;
 }
 .tarot-card .card-text {
   color: white;
   font-weight: normal;
 }
-.tarot-card > .card-footer, .tarot-card > .card-footer small {
+.tarot-card > .card-footer, .tarot-card .card-header, .tarot-card > .card-footer small {
   color: #707053;
   background-color: initial;
   font-weight: bold;
@@ -150,6 +157,7 @@ export default {
 .star-button > span.r {
   float: right;
 }
+
 .rotate_1 {
   -webkit-transform: translateY(0px) rotate(-3deg);
           transform: translateY(0px) rotate(-3deg);
