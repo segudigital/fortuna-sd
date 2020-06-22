@@ -1,8 +1,8 @@
 
 # fortuna
 
-### Ejemplo
-(próximamente)
+### URL
+https://fortuna.segudigital.org
 
   ![enter image description here](https://repository-images.githubusercontent.com/259780472/15404000-907f-11ea-95c0-f46599a2ea49)
 
