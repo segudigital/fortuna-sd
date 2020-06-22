@@ -29,12 +29,12 @@
                 
                 <b-modal :id="'modal-'+index" :title="item.category" size="lg" ok-only :content-class="'modal-tarot'" >
                   <div>
-                    <p class="my-4">{{ item.text_result_default }} {{index}}</p>
+                    <p class="my-4">{{ item.text_result_default }}</p>
                     <div v-for="responses of item.questions" :key="responses.index" class="text-left mx-5">
                       <b-card v-if="!responses.responses" :title="responses.text" bg-variant="dark" class="mb-2 modal-card-tarot">
                         <!-- <b-card v-if="!responses.responses" :title="responses.text" :sub-title="responses.responses.toString()" bg-variant="light" class="mb-2"> -->
-                        <b-card-text>
-                          {{ responses.error_text }}
+                        <b-card-text v-html="responses.error_text">
+                          <!-- {{ responses.error_text }} -->
                         </b-card-text>
                         <div class="text-right"><b-link :href="responses.url_resource " class="card-link" target="_blank">Más info >></b-link></div>
                       </b-card>
@@ -44,7 +44,7 @@
                 </b-modal>
               </div>
               <template v-slot:footer>
-                <div class="text-right"><small>Score: {{ score(item.questions) }} de {{ item.questions.length }}</small></div>
+                <div class="text-right"><small>{{ $t('quiz.score') }}: {{ score(item.questions) }} de {{ item.questions.length }}</small></div>
               </template>
             </b-card>
           </div>
@@ -218,6 +218,16 @@ export default {
 }
 .modal-card-tarot .card-link:hover {
   color: white;
+}
+.modal-card-tarot .card-text > a {
+    color: rgba(255,255,255, 0.5);
+    transition: 0.4s;
+  text-decoration: underline;
+}
+.modal-card-tarot .card-text > a:hover {
+  text-decoration: underline;
+    color: rgba(255,255,255, 1);
+    transition: 0.4s;
 }
 
 </style>

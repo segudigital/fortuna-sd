@@ -4,12 +4,12 @@
         "_comment": "Menú principal (Menu.vue)",
         "about": "Sobre este proyecto",
         "language": "Idioma",
-        "help_translate": "Ayudanos a traducir"
+        "help_translate": "Ayúdanos a traducir"
     },
     "hello": {
         "_comment": "Modulo de inicio (Hello.vue)",
         "title": "¡Que Mercurio retrógrado no afecte tus comunicaciones digitales!",
-        "text": "<p>Contesta este test y descubre cuidados que puedes incorporar en las acciones de comunicación en línea de tu organización, medio o colectivx.</p> <p>Responde el test sobre uso de la tecnología para la comunicación de tu causa, movimiento o labor periodística. Este test contiene preguntas sobre tus dispositivos, sobre cómo manejas tus cuentas, apps y plataformas en internet, así como tu información y la de tu comunidad. Al finalizar, te invitamos a suscribirte al reto semanal y recibir en tu correo acciones breves para seguir explorando juntxs.</p>",
+        "text": "<p>Contesta este test y descubre cuidados que puedes incorporar en las acciones de comunicación en línea de tu organización, medio o colectivx.</p> <p>Este test contiene preguntas sobre tus dispositivos, sobre cómo manejas tus cuentas, apps y plataformas en internet, así como tu información y la de tu comunidad. Al finalizar, te invitamos a suscribirte al reto semanal y recibir en tu correo actividades para seguir explorando juntxs.</p>",
         "acction_button": "Ir al test",
         "alt_imagen": "Adivina Seguridad Digital"
       },
@@ -35,43 +35,45 @@
         "_comment": "Seccion general del Quizz (Quiz.vue, QuizLoader.vue, QuizResults.vue)",
         "alt_imagen": "Cartas tarot",
         "title_results": "Las cartas dicen que tu fortuna en seguridad digital es:",
-        "text_results": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laboriosam possimus, quaerat voluptate sint doloremque eos facere veniam, quis illo expedita velit commodi ut temporibus beatae quibusdam molestias? Illum, quasi!",
-        "button_recomendations": "Ver recomendaciones"
+        "text_results": "Selecciona cada una de las siguientes cartas para ver cuál es tu fortuna en tus dispositivos, tus cuentas y tu información. Cualquiera que sea el mensaje que tienen para ti, recuerda que puedes avanzar hacia un futuro donde tus cuidados de seguridad digital personales y los de tu colectivx, medio u organización estén en sintonía. ¡Mantén tu energía para triunfar!",
+        "button_recomendations": "Ver recomendaciones",
+        "score": "Puntaje"
     },
     "reto_form": {
         "_comment": "Cuadro de registro en el boletin del Reto de Segurida digital (RetoForm.vue)",
-        "title_challenge": "Te recomendamos unirte al reto semanal de seguridad digital",
-        "text_challenge": "Si queieres mejorar tu fortuna en seguridad digital te recomendamos unirte al resto semanal, Aqui recibiras una nueva tarea cada lunez para mejorar la seguridad en tus cuentas y redes. At quod qui ut voluptatem necessitatibus est itaque, eos odio, officia eveniet incidunt iste omnis vitae animi quibusdam ipsam provident molestiae iure?",
-        "button_challenge": "Unirme al reto"
+        "title_challenge": "¡Suscríbete! Recibe un reto semanal de seguridad digital",
+        "text_challenge": "Si quieres mejorar tu fortuna en seguridad digital te recomendamos unirte al reto semanal. Cada semana te enviaremos una nueva actividad, guía o contenido para que vayas explorando, adoptando nuevas medidas y configurándolas a tu preferencia. El reto semanal te ofrece la oportunidad de ir a tu ritmo, en el camino hacia prácticas digitales más seguras.",
+        "button_challenge": "Unirme al reto",
+        "input_challenge": "Correo electrónico"
     },
 
 
     "quiz_items":[
         {
             "category": "Dispositivos",
-            "text_result_good": "Buen presagio en tu futuro con el manejo de tus dispositivos. (BUENO)",
-            "text_result_medium": "No tan buen presagio en tu futuro con el manejo de tus dispositivos. (MEDIO)",
-            "text_result_bad": "Mal presagio en tu futuro con el manejo de tus dispositivos. (MALO)",
-            "text_result_default": "**Este texto siempre se muestra",
+            "text_result_good": "Has dominado la base de la seguridad en dispositivos. ¡No bajes la guardia!",
+            "text_result_medium": "Vas por un buen camino. Continúa construyendo prácticas más seguras.",
+            "text_result_bad": "Para que nada turbe tu paz, recupera el poder sobre tus dispositivos.",
+            "text_result_default": "Contenedores de información, secretos y esfuerzos, nuestros dispositivos requieren de nuestra atención más allá de las notificaciones, para blindarlos de las fuerzas externas que quieran vulnerarlos.",
             "color": "#ff0000",
             "questions":[
                 {
                     "text":"¿Tienes activada la contraseña de acceso en los dispositivos que usas para la comunicación?",
                     "description": "",
-                    "error_text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum a aliquam, nobis quisquam quas inventore. Voluptatibus veniam iusto officia consequuntur, sunt optio quas porro dolorum delectus hic numquam similique ab!Officiis sapiente neque, reiciendis molestias consequatur quidem illo aliquid nulla iure nam! Dignissimos, accusantium animi! Accusamus quisquam molestiae commodi aspernatur totam non, aperiam harum voluptatum eius esse enim voluptatibus quas.",
+                    "error_text": "Tus dispositivos son la puerta de acceso a tus redes sociales, contactos, fotos, correo electrónico y más… ¡Protégelos! Activa una contraseña. Si no sabes cuál de todas las opciones elegir <a href='https://r3d.mx/2020/01/07/6-propositos-para-mejorar-tu-seguridad-digital-en-2020/' target='_blank'>R3D</a> tiene algunas sugerencias.",
                     "url_resource": "https://segudigital.org",
                     "responses":[
                         {"text":"No"},
-                        {"text":"Si","correct":true}
+                        {"text":"Sí","correct":true}
                     ]
                 },
                 {
                     "text":"¿Tienes antivirus en tus dispositivos? ",
                     "description": "",
-                    "error_text": "Te recomendamos descargar en tu equipo de cómputo y teléfono uno de estos antivirus gratuitos https://www.avg.com, https://www.avira.com/es ¡Ojo! No es recomendable tener más de un antivirus en tus dispositivos ya que podrían entorpecer sus labores.",
-                    "url_resource": "https://segudigital.org",
+                    "error_text": "Te recomendamos descargar en tu equipo de cómputo y teléfono uno de estos antivirus gratuitos: <a href='https://www.avg.com' target='_blank'>AVG</a> o <a href='https://www.avira.com/es' target='_blank'>AVIRA</a>. ¡Ojo! No es recomendable tener más de un antivirus en tus dispositivos ya que podrían entorpecer sus labores.",
+                    "url_resource": "https://protege.la/antivirus-avg",
                     "responses":[
-                        {"text":"Si","correct":true},
+                        {"text":"Sí","correct":true},
                         {"text":"No"},
                         {"text":"Sí, ¡tengo hasta dos! 🙈"}
                     ]
@@ -79,10 +81,136 @@
                 {
                     "text":"¿Tu teléfono y equipo de cómputo están cifrados?",
                     "description": "",
-                    "error_text": "Considera cifrar tus dispositivos y equipo de cómputo para proteger tu información de intrusos. ¡Hey! Será mucho más fácil de lo que piensas ;) Aquí https://segudigital.org/que-hago-para-cifrar-mis-dispositivos/ te explicamos cómo hacerlo.",
-                    "url_resource": "https://segudigital.org/que-hago-para-cifrar-mis-dispositivos/ ",
+                    "error_text": "Considera cifrar tus dispositivos y equipo de cómputo para proteger tu información de intrusos. ¡Hey! Será mucho más fácil de lo que piensas ;) Nosotrxs te explicamos cómo hacerlo.",
+                    "url_resource": "https://segudigital.org/que-hago-para-cifrar-mis-dispositivos",
                     "responses":[
-                        {"text":"Si","correct":true},
+                        {"text":"Sí","correct":true},
+                        {"text":"No"},
+                        {"text":"No sé 🤔"}
+                    ]
+                },
+                {
+                    "text":"¿Conectas tu teléfono por usb en cualquier equipo de cómputo o en cargadores públicos?",
+                    "description": "",
+                    "error_text": "¡Ojo! No arriesgues tu dispositivo a una infección. Mentes Ambulantes te explica cómo hacer un condón USB para que puedas usar cargadores públicos y asegurarte de sólo pasar corriente eléctrica y no datos.",
+                    "url_resource": "https://segudigital.org/fanzine-condon-digital-para-celular/",
+                    "responses":[
+                        {"text":"No","correct":true},
+                        {"text":"Sí"}
+                    ]
+                },
+                {
+                    "text":"¿Te conectas en sitios públicos donde ofrecen wifi gratis como cafés, terminales o aeropuertos, parques?",
+                    "description": "",
+                    "error_text": "Descarga la VPN de Riseup,  enciéndela y úsala mientras navegas por internet. ¡Es gratuita! Protegerá tus datos mientras te conectas a redes públicas de wifi, para que nadie te espíe.",
+                    "url_resource": "https://riseup.net/en/vpn",
+                    "responses":[
+                        {"text":"Sí"},
+                        {"text":"Sí pero con VPN 😉","correct":true},
+                        {"text":"No"}
+                    ]
+                },
+                {
+                    "text":"¿Llevas algún registro de los incidentes o cosas raras que suceden en tus dispositivos o cuentas?",
+                    "description": "",
+                    "error_text": "Hacer un registro de incidentes digitales te ayuda a identificar patrones y agresorxs, prevenir ataques, mitigar su impacto e informar las medidas de seguridad que puedas tomar.",
+                    "url_resource": "https://seguridad-digital.org/por-que-y-como-registrar-y-documentar-incidentes/",
+                    "responses":[
+                        {"text":"Sí","correct":true},
+                        {"text":"No"}
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Manejo de cuentas",
+            "text_result_good": "¡Sigue así! El horizonte planetario de hoy te indica que vas por un ¡excelente camino!",
+            "text_result_medium": "Necesitas una dosis extra de entusiasmo ciberseguroso, ¡ya casi lo logras!",
+            "text_result_bad": "Evita problemas con tus cuentas, pon manos a la obra en la seguridad",
+            "text_result_default": "Ya sean ventanas para mirar hacia el exterior, aparadores para mostrar nuestras causas o espejos para contemplarnos, las siguientes recomendaciones te guiarán para manejar tus cuentas de forma más segura y mantener la armonía en tus espacios y en tu comunidad.",
+            "color": "#00ff00",
+            "questions":[
+                {
+                    "text":"¿Descargas apps para hacer diseños, grabar audio, manejar redes sociales...u otras actividades?",
+                    "description": "",
+                    "error_text": "¡Miles y miles de apps a un sólo clic de distancia! Pero ojo, sigue siendo muy importante revisar ¿qué apps estamos descargando? Aquí encontrarás preguntas y algunas acciones sencillas para saber cómo seleccionarlas.",
+                    "url_resource": "https://segudigital.org/escogiendo-apps-para-descargar-en-tus-dispositivos/",
+                    "responses":[
+                        {"text":"Sí"},
+                        {"text":"No","correct":true}
+                    ]
+                },
+                {
+                    "text":"¿Usas la misma contraseña en todas las cuentas de correo, redes sociales, apps y servicios en internet?",
+                    "description": "",
+                    "error_text": "Las plataformas que usamos en internet con frecuencia enfrentan ataques que exponen nuestras cuentas y contraseñas de acceso. Entra a <a href='https://haveibeenpwned.com/' target='_blank'>Have I been pwned</a> y revisa si el correo con el que ingresas a tus cuentas ha sido ya expuesto. En ese caso ¡hoy es un buen día para cambiar tus contraseñas!",
+                    "url_resource": "https://haveibeenpwned.com/ ",
+                    "responses":[
+                        {"text":"Sí"},
+                        {"text":"No","correct":true}
+                    ]
+                },
+                {
+                    "text":"¿Utilizas un administrador de contraseñas?",
+                    "description": "",
+                    "error_text": "<a href='https://infoactivismo.org/que-es-un-gestor-de-contrasenas-y-para-que-sirve/' target='_blank'>Infoactivismo</a> te explica por qué y cómo usar un administrador de contraseñas, además de recomendarte cuáles utilizar.",
+                    "url_resource": "https://infoactivismo.org/que-es-un-gestor-de-contrasenas-y-para-que-sirve/",
+                    "responses":[
+                        {"text":"Sí","correct":true},
+                        {"text":"No"}
+                    ]
+                },
+                {
+                    "text":"¿Eres la única persona que tiene los accesos a las cuentas de redes sociales, página web, boletín electrónico y otros servicios en línea del colectivx, medio u organización?",
+                    "description": "",
+                    "error_text": "¡Encontremos un término medio! Te recomendamos que al menos una persona más dentro de la organización tenga los accesos a las cuentas también, sin caer en que todas las personas los tengan. Ahora, ¿cómo cambiar las contraseñas frecuentemente y asegurarnos que alguien más las tenga también? Puedes probar de muchas formas, hay organizaciones que usan un llavero en línea como <a href='https://lastpass.com/' target='_blank'>LastPass</a> por ejemplo.",
+                    "url_resource": "https://lastpass.com/",
+                    "responses":[
+                        {"text":"Sí"},
+                        {"text":"No, hay otra persona más que los tiene también","correct":true},
+                        {"text":"No, todxs tenemos acceso a todo 👯‍♀️👯‍♂️"}
+                    ]
+                },
+                {
+                    "text":"¿Cuando intercambias contraseñas de las cuentas lo haces a través de un chat o correo cifrado?",
+                    "description": "",
+                    "error_text": "Descarga Signal y utilízalo con tus compañerxs para intercambiar información como contraseñas de acceso a las cuentas, también para intercambiar enlaces a documentos. ¡Que no todo esté en Whatsapp!",
+                    "url_resource": "https://signal.org/",
+                    "responses":[
+                        {"text":"Sí","correct":true},
+                        {"text":"No"},
+                        {"text":"No sé 🤔"}
+                    ]
+                },
+                {
+                    "text":"¿Tienes activada la verificación de dos pasos en las cuentas?",
+                    "description": "",
+                    "error_text": "Esta guía de la <a href='https://informaterompeelmiedo.mx/' target='_blank'>Red Rompe el Miedo</a> te explica cómo funciona la verificación de dos pasos y cómo configurarla en tus cuentas. Te recomendamos utilizar la app de <a href='https://authy.com/' target='_blank'>Authy</a> para la generación de tus códigos de verificación.",
+                    "url_resource": "https://segudigital.org/rana/2020/06/Qué-es-la-verificación-de-dos-pasos-y-por-qué-es-importante.png",
+                    "responses":[
+                        {"text":"No"},
+                        {"text":"Sí","correct":true},
+                        {"text":"No sé 🤔"}
+                    ]
+                },
+                {
+                    "text":"¿Tu página web tiene protección contra ataques DDoS?",
+                    "description": "",
+                    "error_text": "Revisa esta <a href='https://protege.la/deflect-guia-rapida/' target='_blank'>guía de Protege.la</a> sobre protección a páginas web contra ataques DDoS. Esta <a href='https://cyber-women.com/es/activismo-online-m%C3%A1s-seguro/sitios-web-m%C3%A1s-seguros/' target='_blank'>sesión de Cibermujeres</a> también te servirá para empezar la reflexión en torno a sitios web más seguros.",
+                    "url_resource": "https://protege.la/deflect-guia-rapida/",
+                    "responses":[
+                        {"text":"No sé 🤔"},
+                        {"text":"Sí","correct":true},
+                        {"text":"No"}
+                    ]
+                },
+                {
+                    "text":"¿Tu página cuenta con httpS en vez de sólo http?",
+                    "description": "",
+                    "error_text": "En esta <a href='https://web.karisma.org.co/wp-content/uploads/2016/02/cartilla_3_genios.jpg' target='_blank'>infografía Genios de Internet</a> nos explica la importancia de navegar usando https. Si todavía no tienes este certificado en tu sitio web, con ayuda del <a href='https://certbot.eff.org/' target='_blank'>Certbot</a> lo puedes tener gratis. Así, ayudas a que tu comunidad navegue más segura por tu sitio.",
+                    "url_resource": "https://web.karisma.org.co/wp-content/uploads/2016/02/cartilla_3_genios.jpg",
+                    "responses":[
+                        {"text":"Sí","correct":true},
                         {"text":"No"},
                         {"text":"No sé 🤔"}
                     ]
@@ -90,74 +218,61 @@
             ]
         },
         {
-            "category": "Privacidad",
-            "text_result_good": "Buen presagio en el futuro de tu privacidad (BUENO)",
-            "text_result_medium": "No tan buen presagio en el futuro de tu privacidad. (MEDIO)",
-            "text_result_bad": "Mal presagio en el futuro de tu privacidad. (MALO)",
-            "text_result_default": "**Este texto siempre se muestra",
+            "category": "Manejo de información",
+            "text_result_good": "Estás en un buen ciclo de seguridad digital. Continúa con todas tus prácticas. ¡Siempre hay más que aprender!",
+            "text_result_medium": "Las prácticas de seguridad digital deben ser cultivadas ¡Continúa avanzando!",
+            "text_result_bad": "Atiende tus corazonadas, tomar medidas te ayudará a prevenir fallas en el futuro.",
+            "text_result_default": "Saberte en comunidad y pensar tus medidas de seguridad digital como cuidados grupales y lo que tus decisiones pueden significar para otrxs, es importante, sobre todo en esta temporada en que seguimos volcándonos al universo digital.",
             "color": "#00ff00",
             "questions":[
                 {
-                    "text":"¿Tienes activada la contraseña de acceso en los dispositivos que usas para la comunicación?",
+                    "text":"¿Haces respaldos frecuentes de tus fotografías, videos y documentos?",
                     "description": "",
-                    "error_text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum a aliquam, nobis quisquam quas inventore. Voluptatibus veniam iusto officia consequuntur, sunt optio quas porro dolorum delectus hic numquam similique ab!Officiis sapiente neque, reiciendis molestias consequatur quidem illo aliquid nulla iure nam! Dignissimos, accusantium animi! Accusamus quisquam molestiae commodi aspernatur totam non, aperiam harum voluptatum eius esse enim voluptatibus quas.",
-                    "url_resource": "https://segudigital.org",
+                    "error_text": "Te recomendamos leer el capítulo sobre <a href='https://seguridadparadefender.org/sites/seguridadparadefender.org/files/2009SeguridadDigital_FrontLineDefenders.pdf' target='_blank'>Copias de seguridad</a> del Manual de seguridad y privacidad digital para defensores de Frontline Defenders (pág 28 y 29) para empezar a planear tus respaldos. Recuerda ¡nadie sabe lo que tiene hasta que... pierde ese archivo!",
+                    "url_resource": "https://seguridadparadefender.org/sites/seguridadparadefender.org/files/2009SeguridadDigital_FrontLineDefenders.pdf",
                     "responses":[
                         {"text":"No"},
-                        {"text":"Si","correct":true}
+                        {"text":"Sí","correct":true}
                     ]
                 },
                 {
-                    "text":"¿Tienes antivirus en tus dispositivos? ",
-                    "description": "",
-                    "error_text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum a aliquam, nobis quisquam quas inventore. Voluptatibus veniam iusto officia consequuntur, sunt optio quas porro dolorum delectus hic numquam similique ab!Officiis sapiente neque, reiciendis molestias consequatur quidem illo aliquid nulla iure nam! Dignissimos, accusantium animi! Accusamus quisquam molestiae commodi aspernatur totam non, aperiam harum voluptatum eius esse enim voluptatibus quas.",
-                    "url_resource": "https://segudigital.org",
+                    "text":"¿La información delicada de tus respaldos está cifrada?",
+                    "description": "¿Respaldar en físico o en línea? Esta <a href='https://securityinabox.org/es/guide/physical/' target='_blank'>guía de Security in a box</a> te ayudará en el análisis de las amenazas que enfrenta tu información. Así podrás identificar el mejor lugar para almacenar tus respaldos con información “delicada”. <a href='https://segudigital.org/respaldos-cifrados-en-linea-y-en-fisico/' target='_blank'>Aquí</a> tips para cifrar tus respaldos físicos o en línea. ",
+                    "error_text": "",
+                    "url_resource": "https://segudigital.org/respaldos-cifrados-en-linea-y-en-fisico/",
                     "responses":[
-                        {"text":"Si","correct":true},
-                        {"text":"No"},
-                        {"text":"Sí, ¡tengo hasta dos! 🙈"}
-                    ]
-                }
-            ]
-        },
-        {
-            "category": "Anonimato",
-            "text_result_good": "Buen presagio en el futuro de tu anonimato (BUENO)",
-            "text_result_medium": "No tan buen presagio en el futuro de tu anonimato. (MEDIO)",
-            "text_result_bad": "Mal presagio en el futuro de tu anonimato. (MALO)",
-            "text_result_default": "**Este texto siempre se muestra",
-            "color": "#00ff00",
-            "questions":[
-                {
-                    "text":"¿Tienes activada la contraseña de acceso en los dispositivos que usas para la comunicación?",
-                    "description": "",
-                    "error_text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum a aliquam, nobis quisquam quas inventore. Voluptatibus veniam iusto officia consequuntur, sunt optio quas porro dolorum delectus hic numquam similique ab!Officiis sapiente neque, reiciendis molestias consequatur quidem illo aliquid nulla iure nam! Dignissimos, accusantium animi! Accusamus quisquam molestiae commodi aspernatur totam non, aperiam harum voluptatum eius esse enim voluptatibus quas.",
-                    "url_resource": "https://segudigital.org",
-                    "responses":[
-                        {"text":"No"},
-                        {"text":"Si","correct":true}
+                        {"text":"Sí","correct":true},
+                        {"text":"No"}
                     ]
                 },
                 {
-                    "text":"¿Tienes antivirus en tus dispositivos? ",
+                    "text":"¿Tienes respaldos de las fotografías y videos que publicas en redes sociales comerciales como Facebook, Youtube..?",
                     "description": "",
-                    "error_text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum a aliquam, nobis quisquam quas inventore. Voluptatibus veniam iusto officia consequuntur, sunt optio quas porro dolorum delectus hic numquam similique ab!Officiis sapiente neque, reiciendis molestias consequatur quidem illo aliquid nulla iure nam! Dignissimos, accusantium animi! Accusamus quisquam molestiae commodi aspernatur totam non, aperiam harum voluptatum eius esse enim voluptatibus quas.",
-                    "url_resource": "https://segudigital.org",
+                    "error_text": "¡Las redes sociales no deben ser tu respaldo o backup de información! Colectivxs, defensorxs y medios enfrentan la censura de sus contenidos con mucha frecuencia. Evita perder tus registros audiovisuales manteniendo un respaldo actualizado de esos archivos.",
+                    "url_resource": "https://protege.la/como-empezar-a-hacer-respaldos-de-tu-informacion/",
                     "responses":[
-                        {"text":"Si","correct":true},
-                        {"text":"No"},
-                        {"text":"Sí, ¡tengo hasta dos! 🙈"}
+                        {"text":"Sí","correct":true},
+                        {"text":"No"}
                     ]
                 },
                 {
-                    "text":"¿Tu teléfono y equipo de cómputo están cifrados?",
+                    "text":"¿Tus cuentas de redes sociales, publicaciones o videos han sido censurados en Facebook, Twitter, Youtube..?",
                     "description": "",
-                    "error_text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum a aliquam, nobis quisquam quas inventore. Voluptatibus veniam iusto officia consequuntur, sunt optio quas porro dolorum delectus hic numquam similique ab!Officiis sapiente neque, reiciendis molestias consequatur quidem illo aliquid nulla iure nam! Dignissimos, accusantium animi! Accusamus quisquam molestiae commodi aspernatur totam non, aperiam harum voluptatum eius esse enim voluptatibus quas.",
-                    "url_resource": "https://segudigital.org",
+                    "error_text": "Defensorxs de derechos humanos, organizaciones, colectivxs y periodistas enfrentan con frecuencia la censura en plataformas comerciales, en sus contenidos y en sus páginas o perfiles de redes sociales. Aquí encontrarás algunas iniciativas que registran la censura y algunas acciones a realizar si eso te ha sucedido.",
+                    "url_resource": "https://segudigital.org/censura-en-plataformas-de-redes-sociales-comerciales/ ",
                     "responses":[
-                        {"text":"Si","correct":true},
-                        {"text":"No"},
-                        {"text":"No sé 🤔"}
+                        {"text":"Sí"},
+                        {"text":"No","correct":true}
+                    ]
+                },
+                {
+                    "text":"¿Cuando haces entrevistas, transmisiones en vivo, videos o fotografías consideras obtener el consentimiento informado de las personas que están siendo retratadas?",
+                    "description": "",
+                    "error_text": "Echa un ojo a estas guías de WITNESS para aprender del <a href='https://es.witness.org/portfolio_page/obtener-consentimiento-informado/' target='_blank'>consentimiento informado</a> y a <a href='https://es.witness.org/portfolio_page/realizar-entrevistas-con-identidad-protegida/' target='_blank'>proteger la identidad de las personas</a> cuando realizas proyectos audiovisuales.",
+                    "url_resource": "https://es.witness.org/portfolio_page/obtener-consentimiento-informado/",
+                    "responses":[
+                        {"text":"No","correct":true},
+                        {"text":"Sí"}
                     ]
                 }
             ]

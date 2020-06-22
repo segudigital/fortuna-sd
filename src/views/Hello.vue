@@ -3,8 +3,8 @@
     <b-row class="row">
       <b-col md="7" class="text-left">
         <h1>{{ $t('hello.title') }}</h1>
-        <div class="mt-4" v-html="$t('hello.text')" /> <!-- esto hay que arreglarlo (v-html), mostrar etiquetas html desde el json, vue dice que hacerlo asi podria ocacionar vulnerabilidades-->
-        <b-button block variant="primary" size="lg" :to="`/${$i18n.locale}/quiz`" class="star-button"><span class="l"></span>{{$t('hello.acction_button')}}<span class="r"></span></b-button>
+        <div class="mt-5" v-html="$t('hello.text')" /> <!-- esto hay que arreglarlo (v-html), mostrar etiquetas html desde el json, vue dice que hacerlo asi podria ocacionar vulnerabilidades-->
+        <b-button block variant="primary" size="lg" :to="`/${$i18n.locale}/quiz`" class="star-button mt-5"><span class="l"></span>{{$t('hello.acction_button')}}<span class="r"></span></b-button>
         <!-- <router-link to="quiz" block variant="primary">{{$t('hello.acction_button')}}</router-link> -->
       </b-col>
       <b-col>
@@ -41,14 +41,13 @@ h1 {
   border-radius: 14px;
   box-shadow: 1px 1px 1px rgba(0,0,0, 0.8);
 }
-.star-button:hover, .star-button:active  {
-  background: #6e7ab1;
-  border: 6px solid #ffe200;
+.star-button:hover, .star-button:active, .star-button:visited, .star-button:focus {
+  background: #6e7ab1 !important;
+  border: 6px solid #ffe200 !important;
   border-radius: 14px;
   box-shadow: 3px 3px 4px rgba(0,0,0, 0.5);
 }
 .star-button > span {
-  display: inline;
   background-image: url('~@/assets/star-button.svg');
   background-repeat: no-repeat;
   background-position: center;

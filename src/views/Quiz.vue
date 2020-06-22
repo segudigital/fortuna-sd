@@ -22,7 +22,7 @@ export default {
   background-color: #754dfb !important;
 }
 .quiz {
-  background:url('~@/assets/circulo-horoscopo-blanco.svg') no-repeat 50% 50%;
+  background:url('~@/assets/circulo-ho-blanco.svg') no-repeat 50% 50%;
   width: 100%; 
   height: 100%;
   background-size:contain;
