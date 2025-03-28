@@ -2,7 +2,7 @@
 # fortuna
 
 ### URL
-[https://fortuna.segudigital.org](https://fortuna-segudigital.web.app/)
+https://fortuna-segudigital.web.app/
 
   ![enter image description here](https://repository-images.githubusercontent.com/259780472/15404000-907f-11ea-95c0-f46599a2ea49)
 
